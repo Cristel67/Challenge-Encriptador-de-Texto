@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="header">
+        <img class="header__imagen" src="clave-de-encriptacion.png" alt="Logo de encriptador">
+        <h1>ENCRIPTADOR DE TEXTO ONLINE</h1>
+        <div class="reniniciar__encriptador">
+            <button class="boton__reiniciar" id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </header>
+    <main class="main__principal">
+        <section class="main__principal__seccion__principal"> 
+            <textarea class="main__principal__input" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="main__principal__acciones">
+                <img class="main__imagen__adv" src="crisis.png" alt="Icono de advertencia">
+                <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="main__principal__boton">
+                <button class="boton" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <div class="main__principal__seccion__secundario">
+            <img class="main__imagen__duda" src="personaje.png" alt="Imagen de mensaje no ingresado">
+            <textarea readonly class="main__principal__output" id="resultado" placeholder=''></textarea>
+            <h3 class="main_mensaje_secundario">Ningún mensaje fue encontrado</h3>
+            <p class="main_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton__copia" id="copiar" onclick="copiarMensaje()" disabled>Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Alura Challenge by Cristel Ortiz.</p>
+    </footer>
+    <script src="runway.js"></script>
+</body>
+</html>
+
+
